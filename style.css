@@ -5,6 +5,7 @@ body{
     user-select: none;
     z-index: 100;
     background-color: black;
+    overflow: hidden;
 }
 body::-webkit-scrollbar{
     display: none;
