@@ -3,11 +3,16 @@ body{
     width: 1370px;
     user-select: none;
     z-index: 100;
-    margin: auto;
+    margin: 0;
     background-color: black; 
 }
 body::-webkit-scrollbar{
     display: none;
+}
+@media screen and (max-width:360px){
+    body{
+        margin: 0;
+    }
 }
 .first-page1{
     height: 800px;
