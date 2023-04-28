@@ -10,7 +10,7 @@ body::-webkit-scrollbar{
 @media screen and (max-width:360px){
     body{
         margin: 0;
-        max-width: 360px;
+        width: 840px;
     }
 }
 .first-page1{
@@ -28,6 +28,7 @@ body::-webkit-scrollbar{
     }
     .first-page1{
         height:1400px;
+	width: 840px;
     }
 
 }
