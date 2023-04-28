@@ -1,10 +1,8 @@
 body{
-    height: 100vh;
+    height: 100%;
     width: 1370px;
-    user-select: none;
-    z-index: 100;
     margin: 0;
-    background-color: black; 
+    background-color: black;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -12,6 +10,7 @@ body::-webkit-scrollbar{
 @media screen and (max-width:360px){
     body{
         margin: 0;
+        max-width: 360px;
     }
 }
 .first-page1{
@@ -20,13 +19,25 @@ body::-webkit-scrollbar{
     background-color: #0557BC;
     position: relative;
 }
+@media screen and (max-width: 360px){
+    .logo{
+        transform: translate(-25%, -40%);
+    }
+    .tags{
+        transform: translate(-50%,-40%);
+    }
+    .first-page1{
+        height:1400px;
+    }
+
+}
+
 .logo{
     height: 80px;
     width: 80px;
     padding: 40px;
     margin-left: 100px;
     margin-top: 40px;
-    border: 0;
     border-radius: 40%;
 }
 .logo-tags{
@@ -49,13 +60,6 @@ body::-webkit-scrollbar{
    font-weight: 100;
    opacity: 0.9;
 }
-.tags h3:hover{
-    background-color:rgb(249, 252, 252);
-    color: #0557BC;
-    opacity: 0.8;
-    border-radius: 10px;
-}
-
 .call{
     padding: 14px 32px;
     margin-left: 40px;
@@ -96,6 +100,17 @@ p{
     flex-direction: column;
     margin-left: 80px; 
     margin-top: 100px;
+}
+@media screen and (max-width:360px){
+    .h1pbutton{
+        transform: translate(6%,-40%);
+        
+    }
+    .first-image{
+        transform: translate(-80%, 50%);
+        min-width: 800px;
+        min-height: 700px;
+    }
 }
 .h1pbutton p{
     margin-top: -2px;
@@ -144,11 +159,31 @@ p{
     opacity: 0.9;
 }
 .second-page1{
-    height:760px;
+    height:740px;
     width: 1370px;
     background-color: #990190;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width:360px){
+    .second-page1{
+        height: 1200px;
+    }
+    .second-image{
+       min-width:900px;
+       min-height:600px;
+       transform: translate(0,-20%);
+    }
+    .second-page2{
+        transform: translate(-130%, 130%);
+        min-width: 700px;
+    }
+    .second-page2 p{
+         margin-top: 50px;
+    }
+    .second-page2 button{
+        margin-top: 5px;
+    }
 }
 .second-image{
     height: 420px;
@@ -161,7 +196,7 @@ p{
     width: 550px;
     height: 450px;
     display: grid;
-    margin-top: 115px;
+    margin-top: 120px;
     margin-right: 25px;
     margin-left: 50px;
     font-family: sans-serif;
@@ -202,6 +237,26 @@ p{
 
 .third-page1 h4{
     font-size: 25px;
+}
+@media screen and (max-width:360px){
+    .third-page{
+        height: 2000px;
+    }
+    .third-page1{
+        transform: translate(-14%,-5%);
+    }
+    .third-page13{
+        transform:translate(65%,-110%); 
+    }
+    .third-page23{
+        transform: translate(-42%,-5%);
+    }
+    .third-page33{
+        transform: translate(-149%,100%);
+    }
+    .view-btn{
+        transform: translate(-13%,75%);
+    }
 }
 .third-page2{
     display: flex;
@@ -331,6 +386,20 @@ p{
     margin-left: 70px;
     margin-top: 80px;
 }
+@media screen and (max-width:360px){
+    .page-4{
+        height:1200px;
+    }
+    .page4-2{
+        transform:translate(-190%,50%);
+    }
+    .page4-1{
+        min-width: 1370px;
+    }
+    .page4{
+        transform:translate(15%,5%);
+    }
+}
 .page4-1 h1,p{
     color: white;
     margin-top: 40px;
@@ -360,6 +429,20 @@ p{
 }
 .page51 h1{
     margin-top: 30px;
+}
+@media screen and (max-width:360px){
+    .page5{
+        height: 1400px;
+    }
+    .page51 h2,.page51 h1{
+        transform:translate(-11%,10%);
+    }
+    .page521{
+        transform: translate(22%,10%);
+    }
+    .page53{
+        transform: translate(-170%,140%);
+    }
 }
 .page52{
     display: flex;
@@ -415,6 +498,30 @@ p{
     background-color: white;
     color: black;
 }
+@media screen and (max-width:360px){
+    .page6{
+        height:2000px;
+        width: 850px;
+    }
+    .page61{
+        transform: translate(5%,10%);
+    }
+    .page62345{
+        min-height:1700px;
+    }
+    .page62{
+        transform:translate(90%,1%);
+    }
+    .page63{
+        transform:translate(-19%,28%);
+    }
+    .page64{
+        transform:translate(-125%,52%);
+    }
+    .page65{
+        transform:translate(-232%,75%);
+    }
+}
 .page62345{
     width: 90%;
     height: 430px;
@@ -467,6 +574,21 @@ p{
     margin-top: 50px;
     font-family: Inter , sans-serif;
     font-size: 28px;
+}
+@media screen and (max-width:360px){
+    .page7{
+        height: 1200px;
+        
+    }
+    .page71{
+        transform: translate(-15%,5%);
+    }
+    #page733{
+        transform: translate(-279%,200%);
+    }
+    #page734{
+        transform: translate(-140%,105%);
+    }
 }
 .page73 p{
    width: 240px;
@@ -528,6 +650,17 @@ p{
     color: #EBED6F;
     font-size: 22px;
     font-family: sans-serif;
+}
+@media screen and (max-width: 360px){
+    .page8{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        transform: translate(-15%,5%);
+        
+    }
 }
 .page82-btn button{
     padding: 17px 45px;
@@ -603,19 +736,3 @@ p{
     font-family: sans-serif;
     opacity: 0.5;
 }
-/*<script>
-setInterval(changecolor, 500);
- function changecolor(){
-    var x=document.getElementById("calling");
-    if(x.style.color=="white")
-      x.style.color="red";
-    else if(x.style.color=="red")
-      x.style.color="blue";
-    else if(x.style.color=="blue")
-      x.style.color="black";
-    else if(x.style.color=="black")
-     x.style.color="white";
-    else x.style.color="white";
-}
-</script>
-<script href="index.js"></script>*/
