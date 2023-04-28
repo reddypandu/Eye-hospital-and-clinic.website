@@ -3,6 +3,7 @@ body{
     width: 1370px;
     user-select: none;
     z-index: 100;
+    margin: 0;
     background-color: black; 
 }
 @media screen and (max-width: 481px){
