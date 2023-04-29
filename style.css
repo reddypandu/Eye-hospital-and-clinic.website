@@ -11,8 +11,8 @@ body::-webkit-scrollbar{
 }
 @media screen and (max-width:360px){
     body{
-        min-width: 360px;
-        overflow-x: hidden;
+        max-width: 360px;
+        
     }
 }
 .first-page1{
@@ -24,12 +24,15 @@ body::-webkit-scrollbar{
 @media screen and (max-width: 360px){
     .logo{
         transform: translate(-80%, -40%);
+        
     }
     .tags{
         transform: translate(-30%,-60%);
+        
     }
     .tags button{
         transform: translate(-130%,120%);
+        
     }
     .contact{
         display: none;
@@ -37,8 +40,7 @@ body::-webkit-scrollbar{
     .first-page1{
         height:1000px;
         width: 360px;
-	overflow-y: hidden;
-        
+          
     }
 
 }
@@ -186,7 +188,7 @@ p{
     .second-page1{
         height: 1210px;
         width: 360px;
-	overflow-y: hidden;
+        
     }
     .second-image{
        max-width:340px;
@@ -266,7 +268,7 @@ p{
     .third-page{
         height: 2000px;
         max-width: 360px;
-	overflow-y: hidden;
+        
     }
     .third-page1{
         transform: translate(1%,-13%);
@@ -368,7 +370,7 @@ p{
         height: 1280px;
         max-width: 360px;
         margin-top: 300px;
-	overflow-y: hidden;
+        
     }
     .third-page221{
         transform: translate(1%,-13%);
@@ -434,35 +436,36 @@ p{
 .page-4{
    width: 1370px;
    height: 500px;
+   background-color: white;
    display: flex;
-   justify-content: space-between;
 }
 .page4-1{
-    background-color: #0557BC; 
+    background-color: #0557BC;
+    height: 500px;
+    width: 650px;
+    margin-left: 35px;
 }
 .page4{
     height: 400px;
-    width: 6800px;
+    width: 680px;
     margin-left: 70px;
     margin-top: 80px;
 }
 @media screen and (max-width:360px){
     .page-4{
-        height:1100px;
-    }
-    .page4-2{
-        transform:translate(-312%,50%);
-	overflow-y: hidden;
+        height:880px;
     }
     .page4-2 img{
         max-width: 330px;
+        max-height: 300px;
+        transform:translate(-115%,180%);
     }
     .page4-1{
         max-width: 360px;
-	overflow-y: hidden;
+        transform: translate(-10%,0%);
     }
     .page4{
-        transform:translate(-18%,-16%);
+        transform:translate(-18%,-20%);
         max-width: 330px;
     }
 }
@@ -500,7 +503,7 @@ p{
     .page5{
         height: 1000px;
         width: 360px;
-	overflow-y: hidden;
+        
     }
     .page51 h2{
         transform:translate(-80%,-230%);
@@ -578,7 +581,7 @@ p{
     .page6{
         height:2000px;
         width: 360px;
-	overflow-y: hidden;
+        
     }
     .page61{
         transform: translate(0%,10%);
@@ -658,7 +661,7 @@ p{
     .page7{
         height: 1150px;
         width: 360px;
-	overflow-y: hidden;
+        
     }
     .page71{
         transform: translate(-1%,-10%);
@@ -749,7 +752,7 @@ p{
         justify-content: center;
         justify-content: space-around;
         transform: translate(0%,0%);
-	overflow-y: hidden;
+        
     }
 }
 .page82-btn button{
@@ -785,7 +788,7 @@ p{
     .page9{
         height:1100px;
         width: 360px;
-	overflow-y: hidden;
+        
     }
     .page91{
         transform: translate(128%,-5%);
@@ -851,8 +854,7 @@ p{
 }
 @media screen and (max-width:360px){
     .page10{
-        width: 360px;
-	overflow-y: hidden;
+        max-width: 360px;
     }
     .page10 p{
         width: 330px;
@@ -864,3 +866,19 @@ p{
     font-family: sans-serif;
     opacity: 0.5;
 }
+/*<script>
+setInterval(changecolor, 500);
+ function changecolor(){
+    var x=document.getElementById("calling");
+    if(x.style.color=="white")
+      x.style.color="red";
+    else if(x.style.color=="red")
+      x.style.color="blue";
+    else if(x.style.color=="blue")
+      x.style.color="black";
+    else if(x.style.color=="black")
+     x.style.color="white";
+    else x.style.color="white";
+}
+</script>
+<script href="index.js"></script>*/
