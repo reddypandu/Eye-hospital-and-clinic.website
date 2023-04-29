@@ -13,10 +13,10 @@
     <div class="logo-tags">
         <img class="logo"src="https://media.istockphoto.com/id/845329690/vector/eye-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=1SnGiyGCXd83V7m2hX0EsghFSqtmApJ6Qyy2b8Y3L1k=">
         <div class="tags">
-            <h3>Home</h3>
-            <h3>About</h3>
-            <h3>Services</h3>
-            <h3>Contact</h3>
+            <h3><a href="#" style="text-decoration: none;color:white">Home</h3></a>
+            <h3><a href="#" style="text-decoration: none;color:white">About</h3></a>
+            <h3><a href="#" style="text-decoration: none;color:white">Services</h3></a>
+            <h3 class="contact"><a href="#" style="text-decoration: none;color:white">Contact</h3></a>
             <div class="number">
             <a href="tel:8008457750"><button class="call" id="calling"><b>Call:8008457755</b></button></a>
             </div>
@@ -26,7 +26,7 @@
         <div class="h1pbutton">
         <h1 id="heading">Best Dentistry Services You Can Trust.</h1>
         <p>If you are looking for a reliable dentist in town, we are here to help. We are <br><br>known for the best, affordable, and painless dental treatments with quick<br><br> appointments and timely solutions.</p>
-        <button class="book">Book an Appointment</button>
+        <button class="book" onclick="book()">Book an Appointment</button>
         </div>
         <div class="first-page-image1">
         <img class="first-image"src="https://www.dentalclinicnewyork.com/wp-content/uploads/2021/05/dental.jpg">
@@ -34,19 +34,87 @@
         </div>
     </div>
 </div>
+<div class="booking" id="booking" style="display: none;">
+    <b><div class="data">
+    <h2>Details::</h2><br><br><br>
+    <div class="d">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your Name" style="margin-left: 59px;"><br><br><br>
+        <label>Age:</label>
+        <input type="number" placeholder="Enter your Age" style="margin-left: 73px;"><br><br><br>
+        <label>Village:</label>
+        <input type="text" placeholder="Enter your village" style="margin-left: 53px;"><br><br><br>
+        <label>Phone number:</label>
+        <input type="text"  placeholder="Enter your Number">
+        <button><b>Submit</b></button>
+        </div>
+    </div></b>
+</div>
+<script>
+    function book(){
+        var x =document.getElementById("booking");
+        if(x.style.display=="none")
+        x.style.display="block";
+        else x.style.display="none";
+    }
+</script>
+<style>
+    .booking{
+       width: 1370px;
+       height: 350px;
+       background-color: orchid;
+       color: white;
+    }
+    @media screen and (max-width: 360px){
+        .booking{
+            width: 360px;
+        }
+        .d{
+            transform: translate(-10%,-10%);
+        }
+        
+    }
+    .data{
+        transform: translate(10%, 5%);
+    }
+    .booking h2{
+        margin: 0;
+    }
+    .d{
+        margin-top: -15px; 
+    }
+    .booking button{
+        padding: 8px 22px;
+        font-size: 15px;
+        margin-left: 100px;
+        background-color: #0557BC;
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 3px 4px 10px black;
+        margin-top: 5px;
+    }
+    .booking input{
+        border: 0;
+        padding: 8px 40px;
+        border-radius: 10px;
+    }
+    .booking input:hover{
+        border: 0;
+    }
+</style>
 <div class="second-page1">
     <img class="second-image" src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/pexels-los-muertos-crew-8460371.jpeg">
     <div class="second-page2">
-    <h2>About us</h2>
-    <h1>Certified Dentists Committed to Excellence</h1>
-    <p>We are a team of 15 certified dentists specialised in offering the best dental treatments in town. With adequate experience of over 12 years, we have mastered the skills of offering the best solutions with the latest technologies.</p>
-    <div style="display: none;" id="read">
-        <p>We are a team of 15 certified dentists specialised in offering the best dental treatments in town. With adequate experience of over 12 years, we have mastered the skills of offering the best solutions with the latest technologies.We are a team of 15 certified dentists specialised in offering the best dental treatments in town. With adequate experience of over 12 years, we have mastered the skills of offering the best solutions with the latest technologies.</p>
-    </div>
-    <button onclick="read()">Read More</button>
+       <h2>About us</h2>
+       <h1>Certified Dentists Committed to Excellence</h1>
+       <p>We are a team of 15 certified dentists specialised in offering the best dental treatments in town. With adequate experience of over 12 years, we have mastered the skills of offering the best solutions with the latest technologies.</p>
+       <div style="display: none;" id="read">
+           <p>We are a team of 15 certified dentists specialised in offering the best dental treatments in town. With adequate experience of over 12 years, we have mastered the skills of offering the best solutions with the latest technologies.We are a team of 15 certified dentists specialised in offering the best dental treatments in town. With adequate experience of over 12 years.</p>
+       </div>
+           <button onclick="read()">Read More</button>
     </div>
 </div>
-    <script>
+<script>
      function read(){
         var y=document.getElementById("read");
         if(y.style.display=="none")
@@ -84,7 +152,7 @@
     function view(){
         var x=document.getElementById("third-page22");
         if(x.style.display=="none")
-          x.style.display="inline"
+          x.style.display="block"
         else x.style.display="none";
     }
 </script>
@@ -131,7 +199,7 @@
         <center><h2 style="color:white">Why Choose Us</h2>
         <h1 style="color:#0B1341">We Make Dental Treatments Fun!</h1></center>
         <div class="page52">
-            <div>
+            <div class="page521">
                <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2021/05/about-doctor-1.jpg" width="650px" height="500px">
             </div>
             <div class="page53">
@@ -187,7 +255,7 @@
     </div>
     <div class="page72">
         <div class="page73">
-            <div class="page731">
+            <div class="page731" id="page731">
                 <div>
                    <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/testimonial-1.jpg" width="52px" height="52px">
                 </div>
@@ -196,7 +264,7 @@
                      <h4>Kyle Simon</h4>
                 </div>
             </div>
-            <div class="page731">
+            <div class="page731" id="page732">
                 <div>
                     <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/testimonial-1.jpg" width="52px" height="52px">
                 </div>
@@ -205,7 +273,7 @@
                     <h4>Kyle Simon</h4>
                 </div>
             </div>
-            <div class="page731">
+            <div class="page731" id="page733">
                 <div>
                 <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/testimonial-1.jpg" width="52px" height="52px">
                 </div>
@@ -216,7 +284,7 @@
             </div>
         </div>
         <div class="page74">
-            <div class="page731">
+            <div class="page731" id="page734">
                 <div>
                 <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/testimonial-1.jpg" width="52px" height="52px">
                 </div>
@@ -225,7 +293,7 @@
                 <h4>Kyle Simon</h4>
                 </div>
             </div>
-            <div class="page731">
+            <div class="page731" id="page735">
                 <div>
                 <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/testimonial-1.jpg" width="52px" height="52px">
                 </div>
@@ -234,7 +302,7 @@
                 <h4>Kyle Simon</h4>
                 </div>
             </div>
-            <div class="page731">
+            <div class="page731" id="page736">
                 <div>
                 <img src="https://www.dentalclinicnewyork.com/wp-content/uploads/2023/04/testimonial-1.jpg" width="52px" height="52px">
                 </div>
@@ -265,7 +333,7 @@
         <i class="fab fa-facebook" style="background-color: white"></i><i class="fab fa-linkedin" style="background-color: white"></i><i class="fab fa-instagram" style="background-color: white"></i>
     </div>
     <div class="page92">
-        <div class="page93">
+        <div class="page93" id="page93">
             <h2 style="font-family: sans-serif;">Quick Links</h2>
             <a href="#">About Us</a><br><br>
             <a href="#">Dentists</a><br><br>
@@ -275,7 +343,7 @@
             <a href="#">Appointments</a><br><br>
             <a href="#">Contact Us</a><br><br>
         </div>
-        <div class="page93">
+        <div class="page93" id="page94">
             <h2 style="font-family: sans-serif;">Services</h2>
             <a href="#">Cosmetic Dentistry</a><br><br>
             <a href="#">Dental X-rays</a><br><br>
@@ -285,15 +353,15 @@
             <a href="#">Teeth Whitening</a><br><br>
             <a href="#">Periodontal Disease</a><br><br>
         </div>
-        <div class="page93">
+        <div class="page93" id="page95">
             <h2 style="font-family: sans-serif;">Business Hours</h2>
-            <a href="#">Monday : 11.00 – 09.00</a><br><br>
-            <a href="#">Tuesday : 11.00 – 09.00</a><br><br>
-            <a href="#">Wednesday : 11.00 – 09.00</a><br><br>
-            <a href="#">Thursday : 11.00 – 09.00</a><br><br>
-            <a href="#">Friday : 11.00 – 09.00</a><br><br>
-            <a href="#">Saturday : 11.00 – 09.00</a><br><br>
-            <a href="#">Sunday – Closed</a><br><br>
+            <a href="#">Monday : 11.00 - 09.00</a><br><br>
+            <a href="#">Tuesday : 11.00 - 09.00</a><br><br>
+            <a href="#">Wednesday : 11.00 - 09.00</a><br><br>
+            <a href="#">Thursday : 11.00 - 09.00</a><br><br>
+            <a href="#">Friday : 11.00 - 09.00</a><br><br>
+            <a href="#">Saturday : 11.00 - 09.00</a><br><br>
+            <a href="#">Sunday - Closed</a><br><br>
         </div>
     </div>
 </div>
