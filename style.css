@@ -37,6 +37,7 @@ body::-webkit-scrollbar{
     .first-page1{
         height:1000px;
         width: 360px;
+	overflow-y: hidden;
         
     }
 
@@ -185,6 +186,7 @@ p{
     .second-page1{
         height: 1210px;
         width: 360px;
+	overflow-y: hidden;
     }
     .second-image{
        max-width:340px;
@@ -264,6 +266,7 @@ p{
     .third-page{
         height: 2000px;
         max-width: 360px;
+	overflow-y: hidden;
     }
     .third-page1{
         transform: translate(1%,-13%);
@@ -365,6 +368,7 @@ p{
         height: 1280px;
         max-width: 360px;
         margin-top: 300px;
+	overflow-y: hidden;
     }
     .third-page221{
         transform: translate(1%,-13%);
@@ -448,12 +452,14 @@ p{
     }
     .page4-2{
         transform:translate(-312%,50%);
+	overflow-y: hidden;
     }
     .page4-2 img{
         max-width: 330px;
     }
     .page4-1{
         max-width: 360px;
+	overflow-y: hidden;
     }
     .page4{
         transform:translate(-18%,-16%);
@@ -494,6 +500,7 @@ p{
     .page5{
         height: 1000px;
         width: 360px;
+	overflow-y: hidden;
     }
     .page51 h2{
         transform:translate(-80%,-230%);
@@ -571,6 +578,7 @@ p{
     .page6{
         height:2000px;
         width: 360px;
+	overflow-y: hidden;
     }
     .page61{
         transform: translate(0%,10%);
@@ -650,6 +658,7 @@ p{
     .page7{
         height: 1150px;
         width: 360px;
+	overflow-y: hidden;
     }
     .page71{
         transform: translate(-1%,-10%);
@@ -740,6 +749,7 @@ p{
         justify-content: center;
         justify-content: space-around;
         transform: translate(0%,0%);
+	overflow-y: hidden;
     }
 }
 .page82-btn button{
@@ -775,6 +785,7 @@ p{
     .page9{
         height:1100px;
         width: 360px;
+	overflow-y: hidden;
     }
     .page91{
         transform: translate(128%,-5%);
@@ -841,6 +852,7 @@ p{
 @media screen and (max-width:360px){
     .page10{
         width: 360px;
+	overflow-y: hidden;
     }
     .page10 p{
         width: 330px;
