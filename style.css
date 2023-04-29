@@ -2,15 +2,17 @@ body{
     height: 100%;
     width: 1370px;
     margin: 0;
-    background-color: black;
+    z-index: 100;
+    background-color: white;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     display: none;
 }
 @media screen and (max-width:360px){
     body{
-        margin: 0;
-        width: 840px;
+        min-width: 360px;
+        overflow-x: hidden;
     }
 }
 .first-page1{
@@ -21,14 +23,21 @@ body::-webkit-scrollbar{
 }
 @media screen and (max-width: 360px){
     .logo{
-        transform: translate(-25%, -40%);
+        transform: translate(-80%, -40%);
     }
     .tags{
-        transform: translate(-50%,-40%);
+        transform: translate(-30%,-60%);
+    }
+    .tags button{
+        transform: translate(-130%,120%);
+    }
+    .contact{
+        display: none;
     }
     .first-page1{
-        height:1400px;
-	width: 840px;
+        height:1000px;
+        width: 360px;
+        
     }
 
 }
@@ -104,13 +113,19 @@ p{
 }
 @media screen and (max-width:360px){
     .h1pbutton{
-        transform: translate(6%,-40%);
-        
+        transform: translate(-18%,-40%);
+        max-width: 350px;
     }
     .first-image{
-        transform: translate(-80%, 50%);
-        min-width: 800px;
-        min-height: 700px;
+        transform: translate(-139%, 135%);
+        max-width: 340px;
+        max-height: 300px;
+    }
+    .float{
+        transform: translate(0,0);
+        position: absolute;
+        float: right;
+        display: none;
     }
 }
 .h1pbutton p{
@@ -168,19 +183,25 @@ p{
 }
 @media screen and (max-width:360px){
     .second-page1{
-        height: 1200px;
+        height: 1210px;
+        width: 360px;
     }
     .second-image{
-       min-width:900px;
-       min-height:600px;
-       transform: translate(0,-20%);
+       max-width:340px;
+       min-height:300px;
+       transform: translate(-7%,-30%);
     }
     .second-page2{
         transform: translate(-130%, 130%);
-        min-width: 700px;
+        min-width: 340px;
+    }
+    .second-page2{
+        max-width: 340px;
+        transform: translate(-134%,80%);
     }
     .second-page2 p{
-         margin-top: 50px;
+         margin-top: 10px;
+         width: 360px;
     }
     .second-page2 button{
         margin-top: 5px;
@@ -242,21 +263,29 @@ p{
 @media screen and (max-width:360px){
     .third-page{
         height: 2000px;
+        max-width: 360px;
     }
     .third-page1{
-        transform: translate(-14%,-5%);
+        transform: translate(1%,-13%);
+        width: 350px;
+    }
+    .third-page13 img,.third-page23 img,.third-page33 img{
+          width: 300px;
     }
     .third-page13{
-        transform:translate(65%,-110%); 
+        transform:translate(-15.3%,-110%); 
+        max-width:300px;
     }
     .third-page23{
-        transform: translate(-42%,-5%);
+        transform: translate(-122%,-5%);
+        max-width:300px;
     }
     .third-page33{
-        transform: translate(-149%,100%);
+        transform: translate(-229%,100%);
+        max-width:300px;
     }
     .view-btn{
-        transform: translate(-13%,75%);
+        transform: translate(-34%,79%);
     }
 }
 .third-page2{
@@ -331,6 +360,32 @@ p{
     align-items: center;
     margin-left: 40px;
 }
+@media screen and (max-width:360px){
+    .third-page22{
+        height: 1280px;
+        max-width: 360px;
+        margin-top: 300px;
+    }
+    .third-page221{
+        transform: translate(1%,-13%);
+        width: 350px;
+    }
+    .third-page2213 img,.third-page2223 img,.third-page2233 img{
+          width: 300px;
+    }
+    .third-page2213{
+        transform:translate(-15.3%,-110%); 
+        max-width:300px;
+    }
+    .third-page2223{
+        transform: translate(-122%,-5%);
+        max-width:300px;
+    }
+    .third-page2233{
+        transform: translate(-229%,100%);
+        max-width:300px;
+    }
+}
 .third-page2213{
     border: 10px;
     margin-left: 20px;
@@ -383,22 +438,26 @@ p{
 }
 .page4{
     height: 400px;
-    width: 680px;
+    width: 6800px;
     margin-left: 70px;
     margin-top: 80px;
 }
 @media screen and (max-width:360px){
     .page-4{
-        height:1200px;
+        height:1100px;
     }
     .page4-2{
-        transform:translate(-190%,50%);
+        transform:translate(-312%,50%);
+    }
+    .page4-2 img{
+        max-width: 330px;
     }
     .page4-1{
-        min-width: 1370px;
+        max-width: 360px;
     }
     .page4{
-        transform:translate(15%,5%);
+        transform:translate(-18%,-16%);
+        max-width: 330px;
     }
 }
 .page4-1 h1,p{
@@ -433,16 +492,25 @@ p{
 }
 @media screen and (max-width:360px){
     .page5{
-        height: 1400px;
+        height: 1000px;
+        width: 360px;
     }
-    .page51 h2,.page51 h1{
-        transform:translate(-11%,10%);
+    .page51 h2{
+        transform:translate(-80%,-230%);
+        max-width: 350px;
     }
-    .page521{
-        transform: translate(22%,10%);
+    .page51 h1{
+        transform:translate(-79%,-50%);
+        max-width: 350px;
+    }
+    .page521 img{
+        max-width: 300px;
+        max-height: 300px;
+        transform: translate(-1%,-20%);
     }
     .page53{
-        transform: translate(-170%,140%);
+        transform: translate(-90%,35%);
+        min-width: 330px;
     }
 }
 .page52{
@@ -486,7 +554,7 @@ p{
     opacity: 0.9;
 }
 .page6{
-    width: 1370px;
+    width: 1370px;   
     height: 680px;
     background-color: black;
 }
@@ -502,25 +570,27 @@ p{
 @media screen and (max-width:360px){
     .page6{
         height:2000px;
-        width: 850px;
+        width: 360px;
     }
     .page61{
-        transform: translate(5%,10%);
+        transform: translate(0%,10%);
     }
     .page62345{
-        min-height:1700px;
+        min-height:1680px;
+        min-width: 310px;
+        transform: translate(-12%,2%);
     }
     .page62{
-        transform:translate(90%,1%);
+        transform:translate(1%,1%);
     }
     .page63{
-        transform:translate(-19%,28%);
+        transform:translate(-106%,25%);
     }
     .page64{
-        transform:translate(-125%,52%);
+        transform:translate(-213%,48%);
     }
     .page65{
-        transform:translate(-232%,75%);
+        transform:translate(-320%,72%);
     }
 }
 .page62345{
@@ -578,17 +648,26 @@ p{
 }
 @media screen and (max-width:360px){
     .page7{
-        height: 1200px;
-        
+        height: 1150px;
+        width: 360px;
     }
     .page71{
-        transform: translate(-15%,5%);
+        transform: translate(-1%,-10%);
+    }
+    #page731{
+        display: none;
+    }
+    #page732{
+        transform: translate(50%,400%);
     }
     #page733{
-        transform: translate(-279%,200%);
+        transform: translate(-50%,8%);
     }
     #page734{
-        transform: translate(-140%,105%);
+        transform: translate(100%,200%);
+    }
+    #page736{
+        transform: translate(-100%,100%);
     }
 }
 .page73 p{
@@ -655,12 +734,12 @@ p{
 @media screen and (max-width: 360px){
     .page8{
         height: 500px;
+        width: 360px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-content: space-around;
-        transform: translate(-15%,5%);
-        
+        transform: translate(0%,0%);
     }
 }
 .page82-btn button{
@@ -691,6 +770,34 @@ p{
     display: flex;
     justify-content: space-between;
     padding-bottom: 268px;
+}
+@media screen and (max-width:360px){
+    .page9{
+        height:1100px;
+        width: 360px;
+    }
+    .page91{
+        transform: translate(128%,-5%);
+    }
+    .page91 i{
+        height: 20px;
+    }
+    #page93{
+        transform: translate(74%,6%);
+        width: 300px;
+    }
+    #page93 h2{
+        transform: translate(-10%,0%);
+    }
+    #page94{
+        transform: translate(-30%,35%);
+        width: 300px;
+    }
+    #page95{
+        transform: translate(-135%,64%);
+        width: 300px;
+    }
+    
 }
 .page91 i{
     padding: 14px;
@@ -730,6 +837,14 @@ p{
 .page10 p{
     font-size: 15px;
     font-family: sans-serif;
+}
+@media screen and (max-width:360px){
+    .page10{
+        width: 360px;
+    }
+    .page10 p{
+        width: 330px;
+    }
 }
 .page10 span{
     color: #0557BC;
