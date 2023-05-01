@@ -27,19 +27,14 @@ body::-webkit-scrollbar{
     }
     .tags{
         transform: translate(-30%,-60%);
-        
     }
     .tags button{
         transform: translate(-130%,120%);
         
     }
-    .contact{
-        display: none;
-    }
     .first-page1{
         height:1000px;
         width: 360px;
-          
     }
 
 }
@@ -141,7 +136,7 @@ p{
 	text-align:center;
     font-size:30px;
 	box-shadow: 1px 1px 4px white;
-    z-index:100;
+    z-index: 100;
 }
 .my-float{
     margin-top: 16px;
